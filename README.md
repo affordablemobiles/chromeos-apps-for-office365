@@ -12,5 +12,6 @@ Most of the apps should work as-is without any customisations, with the exceptio
 
 Since OneDrive for Office365 is at a unique Sharepoint URL for each organisation, you'll need to edit the `manifest.json` with your URL before generating the zip file and submitting to the Chrome Web Store.
 
-### Example
+### Screenshot Example
 
+![Screenshot Example of Dock](https://github.com/a1comms/chromeos-apps-for-office365/raw/master/docs/screenshot.png)
