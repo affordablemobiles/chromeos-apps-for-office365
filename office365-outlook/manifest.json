@@ -1,0 +1,21 @@
+{
+   "app": {
+      "launch": {
+         "container": "tab",
+         "web_url": "https://outlook.office365.com/"
+      },
+      "urls": [
+         "*://outlook.office365.com/",
+         "*://outlook.office.com/"
+      ]
+   },
+   "description": "Office365 Outlook Web Access",
+   "icons": {
+      "128": "128.png"
+   },
+   "name": "Office365 Outlook",
+   "options_page": "https://outlook.office.com/mail/options/mail/layout",
+   "permissions": [ "notifications" ],
+   "version": "0.2",
+   "manifest_version": 2
+}

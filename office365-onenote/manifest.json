@@ -1,0 +1,20 @@
+{
+   "app": {
+      "launch": {
+         "container": "tab",
+         "web_url": "https://www.office.com/launch/onenote"
+      },
+      "urls": [
+         "*://www.office.com/launch/onenote"
+      ]
+   },
+   "description": "Office365 OneNote",
+   "icons": {
+      "128": "128.png"
+   },
+   "name": "Office365 OneNote",
+   "options_page": "https://a1commsltd-my.sharepoint.com/",
+   "permissions": [],
+   "version": "0.1",
+   "manifest_version": 2
+}

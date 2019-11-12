@@ -1,0 +1,21 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+   "app": {
+      "launch": {
+         "container": "tab",
+         "web_url": "https://mail.google.com/mail"
+      },
+      "urls": [ "*://mail.google.com/mail" ]
+   },
+   "default_locale": "en",
+   "description": "__MSG_appDesc__",
+   "icons": {
+      "128": "128.png"
+   },
+   "name": "__MSG_appName__",
+   "options_page": "https://mail.google.com/mail/#settings",
+   "permissions": [ "notifications" ],
+   "version": "8.2",
+   "manifest_version": 2
+}

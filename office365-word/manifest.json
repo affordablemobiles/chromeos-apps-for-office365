@@ -1,0 +1,20 @@
+{
+   "app": {
+      "launch": {
+         "container": "tab",
+         "web_url": "https://www.office.com/launch/word"
+      },
+      "urls": [
+         "*://www.office.com/launch/word"
+      ]
+   },
+   "description": "Office365 Word",
+   "icons": {
+      "128": "128.png"
+   },
+   "name": "Office365 Word",
+   "options_page": "https://a1commsltd-my.sharepoint.com/",
+   "permissions": [],
+   "version": "0.1",
+   "manifest_version": 2
+}

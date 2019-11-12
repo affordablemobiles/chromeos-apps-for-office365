@@ -1,0 +1,20 @@
+{
+   "app": {
+      "launch": {
+         "container": "tab",
+         "web_url": "https://a1commsltd-my.sharepoint.com/"
+      },
+      "urls": [
+         "*://a1commsltd-my.sharepoint.com/"
+      ]
+   },
+   "description": "Office365 OneDrive",
+   "icons": {
+      "128": "128.png"
+   },
+   "name": "Office365 OneDrive",
+   "options_page": "https://a1commsltd-my.sharepoint.com/",
+   "permissions": [],
+   "version": "0.2",
+   "manifest_version": 2
+}
