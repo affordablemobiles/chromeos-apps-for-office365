@@ -1,0 +1,20 @@
+{
+   "app": {
+      "launch": {
+         "container": "tab",
+         "web_url": "https://teams.microsoft.com/"
+      },
+      "urls": [
+         "*://teams.microsoft.com/"
+      ]
+   },
+   "description": "Microsoft Teams",
+   "icons": {
+      "128": "128.png"
+   },
+   "name": "Microsoft Teams",
+   "options_page": "https://teams.microsoft.com/",
+   "permissions": [ "notifications" ],
+   "version": "0.2",
+   "manifest_version": 2
+}
