@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Microsoft Teams Chrome OS Presence",
+    "version": "0.2",
+    "description": "A tool to keep you available based on Chrome OS system idle status",
+    "background": {
+        "service_worker": "background.js"
+    },
+    "icons": {
+        "16": "images/teamsIcon.png",
+        "128": "images/teamsIcon.png"
+    },
+    "permissions": [
+        "alarms",
+        "tabs",
+        "scripting",
+        "idle"
+    ],
+    "host_permissions": [
+        "https://*.teams.microsoft.com/*",
+        "https://*.teams.microsoft.com.mcas.ms/*"
+    ]
+}
