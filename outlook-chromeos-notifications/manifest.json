@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Microsoft Outlook Chrome OS Notifications",
-    "version": "0.2",
+    "version": "0.3",
     "description": "A tool to add an app badge on Chrome OS",
     "background": {
         "service_worker": "background.js"

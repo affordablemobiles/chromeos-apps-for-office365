@@ -7,28 +7,28 @@ try {
     }
   );
 
-  const alarmName = "forceTeamsAvailability";
+  const alarmName = "forceTeamsNotifications";
 
   chrome.runtime.onInstalled.addListener(async () => {
     console.log("adding alarm"), chrome.alarms.create(alarmName, { periodInMinutes: 0.0041666666666667 }); // 250ms
   });
 
   chrome.alarms.onAlarm.addListener((e) => {
-    e.name === alarmName && runForceAvailability();
+    e.name === alarmName && runForceNotifications();
   });
 
-  function runForceAvailability() {
+  function runForceNotifications() {
     chrome.tabs.query({ url: ["https://teams.microsoft.com.mcas.ms/*", "https://teams.microsoft.com/*"] }, function (e) {
       for (tab of e) {
         console.log("tab found: " + tab.url);
-        chrome.scripting.executeScript({ world: "MAIN", target: { tabId: tab.id }, function: requestForceAvailability }, () => { });
+        chrome.scripting.executeScript({ world: "MAIN", target: { tabId: tab.id }, function: requestForceNotifications }, () => { });
         return;
       }
       console.log("tab not found");
     });
   }
 
-  function requestForceAvailability() {
+  function requestForceNotifications() {
     try {
       let count = 0;
 

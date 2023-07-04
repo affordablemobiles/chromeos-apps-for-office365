@@ -68,9 +68,9 @@ try {
           (check = await fetch("https://presence.teams.microsoft.com/v1/me/presence/", { headers: { "Content-Type": "application/json", Authorization: "Bearer " + d }, method: "GET" })).ok,
           consolelog("presence check: " + (await check.json()).availability)
         )
-        : consolelog("MS Teams Always Available: Couldnt find auth token in local stoage");
+        : consolelog("couldnt find auth token in local stoage");
     } catch (e) {
-      consolelog("MS Teams Always Available: HTTP req failed to /forceavailability: " + e);
+      consolelog("HTTP req failed to /presence: " + e);
     }
   }
 

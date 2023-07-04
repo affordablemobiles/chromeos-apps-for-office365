@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Microsoft Teams Chrome OS Notifications",
-    "version": "0.1",
+    "version": "0.2",
     "description": "A tool to add an app badge on Chrome OS",
     "background": {
         "service_worker": "background.js"
