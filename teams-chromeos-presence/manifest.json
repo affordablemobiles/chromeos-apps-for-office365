@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
-    "name": "Microsoft Teams Chrome OS Presence",
-    "version": "0.3",
+    "name": "MS Teams Chrome OS Presence",
+    "version": "1.0",
     "description": "A tool to keep you available based on Chrome OS system idle status",
     "background": {
         "service_worker": "background.js"

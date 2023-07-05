@@ -1,20 +1,19 @@
 {
     "manifest_version": 3,
     "name": "Gmail Chrome OS Notifications",
-    "version": "0.1",
+    "version": "1.0",
     "description": "A tool to add an app badge on Chrome OS",
-    "background": {
-        "service_worker": "background.js"
-    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://mail.google.com/*"
+            ],
+            "js": [
+                "content-script.js"
+            ]
+        }
+    ],
     "icons": {
         "128": "images/icon128.png"
-    },
-    "permissions": [
-        "alarms",
-        "tabs",
-        "scripting"
-    ],
-    "host_permissions": [
-        "https://mail.google.com/*"
-    ]
+    }
 }

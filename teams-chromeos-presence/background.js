@@ -10,7 +10,7 @@ try {
   const alarmName = "forceTeamsAvailability";
 
   chrome.runtime.onInstalled.addListener(async () => {
-    console.log("adding alarm"), chrome.alarms.create(alarmName, { periodInMinutes: 0.0041666666666667 }); // 250ms
+    console.log("adding alarm"), chrome.alarms.create(alarmName, { periodInMinutes: 1 });
   });
 
   chrome.alarms.onAlarm.addListener((e) => {
@@ -43,9 +43,7 @@ try {
       for (tab of e) {
         console.log("tab found: " + tab.url);
         chrome.scripting.executeScript({ world: "MAIN", target: { tabId: tab.id }, function: requestForceAvailability }, () => { });
-        return;
       }
-      console.log("tab not found");
     });
   }
 

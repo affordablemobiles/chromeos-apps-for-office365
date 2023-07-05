@@ -1,22 +1,21 @@
 {
     "manifest_version": 3,
-    "name": "Microsoft Teams Chrome OS Notifications",
-    "version": "0.2",
+    "name": "MS Teams Chrome OS Notifications",
+    "version": "1.0",
     "description": "A tool to add an app badge on Chrome OS",
-    "background": {
-        "service_worker": "background.js"
-    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*.teams.microsoft.com/*",
+                "https://*.teams.microsoft.com.mcas.ms/*"
+            ],
+            "js": [
+                "content-script.js"
+            ]
+        }
+    ],
     "icons": {
         "16": "images/teamsIcon.png",
         "128": "images/teamsIcon.png"
-    },
-    "permissions": [
-        "alarms",
-        "tabs",
-        "scripting"
-    ],
-    "host_permissions": [
-        "https://*.teams.microsoft.com/*",
-        "https://*.teams.microsoft.com.mcas.ms/*"
-    ]
+    }
 }
