@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "MS Teams Chrome OS Notifications",
-    "version": "1.0",
-    "description": "A tool to add an app badge on Chrome OS",
+    "name": "Badge Notifications for MS Teams PWA",
+    "version": "1.1",
+    "description": "A tool to add a pending notification app badge (tested on Chrome OS)",
     "content_scripts": [
         {
             "matches": [
