@@ -4,7 +4,7 @@ try {
 
     try {
       try {
-        document.querySelector('div[title="Inbox"]').querySelectorAll('span[class="screenReaderOnly"]').forEach(function (v, i) {
+        document.querySelector('div[title~="Inbox"]').querySelectorAll('span[class="screenReaderOnly"]').forEach(function (v, i) {
           if (v.innerText == "unread") {
             count = parseInt(v.parentElement.firstChild.innerText, 10);
           }
