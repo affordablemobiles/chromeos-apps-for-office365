@@ -1,13 +1,14 @@
 {
     "manifest_version": 3,
     "name": "Badge Notifications for MS Teams PWA",
-    "version": "2.1",
+    "version": "2.3",
     "description": "A tool to add a pending notification app badge (tested on Chrome OS)",
     "content_scripts": [
         {
             "matches": [
                 "https://*.teams.microsoft.com/*",
                 "https://*.teams.microsoft.com.mcas.ms/*",
+                "https://*.teams.microsoft.us.mcas-gov.us/*",
                 "https://*.teams.microsoft.us/*"
             ],
             "js": [
