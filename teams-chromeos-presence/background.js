@@ -26,7 +26,7 @@ try {
   }
 
   function runForceAvailabilityReal() {
-    chrome.tabs.query({ url: ["https://teams.microsoft.com.mcas.ms/*", "https://teams.microsoft.com/*", "https://teams.live.com/*", "https://gov.teams.microsoft.us/*", "https://dod.teams.microsoft.us.mcas-gov.us/*"] }, function (e) {
+    chrome.tabs.query({ url: ["https://teams.microsoft.com.mcas.ms/*", "https://teams.microsoft.com/*", "https://teams.live.com/*", "https://gov.teams.microsoft.us/*", "https://dod.teams.microsoft.us.mcas-gov.us/*", "https://teams.cloud.microsoft/*"] }, function (e) {
       for (tab of e) {
         console.log("tab found: " + tab.url);
         chrome.scripting.executeScript({ world: "MAIN", target: { tabId: tab.id }, function: requestForceAvailability }, () => { });
